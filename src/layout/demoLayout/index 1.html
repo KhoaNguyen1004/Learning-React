@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            padding-bottom: 80px;
+        }
+
+        .item {
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .status {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+
+        .feature {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-edit {
+            background-color: #1bb3ce;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .btn-delete {
+            background-color: #ed3838;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .done{
+            background-color: green;
+        }
+        .pending{
+            background-color: yellow;
+            color: black;
+        }
+        .in-progress{
+            background-color: blue;
+        }
+        .cancel{
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>TO DO APP UI</h2>
+    </header>
+    <!-- Content: Show all item -->
+    <div class="wrapper">
+        <div class="item">
+            <div class="title">Item 1</div>
+            <div class="description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio eum ullam quae
+                officia repellendus autem reprehenderit perferendis vero error. </div>
+            <div class="status done">DONE</div>
+            <div class="feature">
+                <div class="btn-edit">Edit</div>
+                <div class="btn-delete">Delete</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Item 2</div>
+            <div class="description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio eum ullam quae
+                officia repellendus autem reprehenderit perferendis vero error. </div>
+            <div class="status pending">PENDING</div>
+            <div class="feature">
+                <div class="btn-edit">Edit</div>
+                <div class="btn-delete">Delete</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Item 3</div>
+            <div class="description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio eum ullam quae
+                officia repellendus autem reprehenderit perferendis vero error. </div>
+            <div class="status in-progress">IN PROGRESS</div>
+            <div class="feature">
+                <div class="btn-edit">Edit</div>
+                <div class="btn-delete">Delete</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Item 4</div>
+            <div class="description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio eum ullam quae
+                officia repellendus autem reprehenderit perferendis vero error. </div>
+            <div class="status in-progress">IN PROGRESS</div>
+            <div class="feature">
+                <div class="btn-edit">Edit</div>
+                <div class="btn-delete">Delete</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Item 5</div>
+            <div class="description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio eum ullam quae
+                officia repellendus autem reprehenderit perferendis vero error. </div>
+            <div class="status in-progress">IN PROGRESS</div>
+            <div class="feature">
+                <div class="btn-edit">Edit</div>
+                <div class="btn-delete">Delete</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Item 6</div>
+            <div class="description"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut optio eum ullam quae
+                officia repellendus autem reprehenderit perferendis vero error. </div>
+            <div class="status cancel">CANCEL</div>
+            <div class="feature">
+                <div class="btn-edit">Edit</div>
+                <div class="btn-delete">Delete</div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer: Show date -->
+    <footer>
+        <p>2024</p>
+    </footer>
+
+
+
+</body>
+
+</html>
