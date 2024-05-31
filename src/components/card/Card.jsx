@@ -1,18 +1,19 @@
-import React from 'react';
-import "./css/ToDoList.css";
+import React from "react";
+import "./Card.css";
+import { Delete, Edit } from "../../layout/Feature";
 
-const ToDoItem = ({title, description, status}) => {
+const TodoCard = ({title, description, status}) => {
     return (
-        <div className='item'>
+        <div className="item">
             <div className='title'>{title}</div>
             <div className='description'>{description}</div>
             <div className={`status ${status}`}>{status.toUpperCase()}</div>
             <div className='feature'>
-                <div className='btn-edit'>Edit</div>
-                <div className='btn-delete'>Delete</div>
+                <Edit/>
+                <Delete/>
             </div>
         </div>
     );
 };
 
-export default ToDoItem;
+export default TodoCard;
